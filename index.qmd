@@ -1,0 +1,14 @@
+---
+title: "Design Artifacts Course"
+author: "Ana Fernandes Rodrigues"
+
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: "Table of Contents"
+    number-depth: 2
+---
+
+{{< include "chapters/00-intro.qmd" >}}
+{{< include "chapters/01-sketches.qmd" >}}
