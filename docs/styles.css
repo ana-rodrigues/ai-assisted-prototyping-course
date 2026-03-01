@@ -4,25 +4,26 @@
    ============================================ */
    
 :root {
-  /* Colors - Dark Theme */
-  --background-color: #18120d;
-  --background-color-dark: #0c0a09;
-  --background-gradient: linear-gradient(to bottom, var(--background-color) 0%, var(--background-color) 30%, var(--background-color-dark) 100%);
-  --surface-color: #18130c;
-  --surface-color-dark: rgba(12, 10, 9, 0.404);
+  /* Colors - Dark Theme with Brown Undertones */
+  --background-color: #140e09;
+  --background-color-dark: #0a0808;
+  --background-hover-color: #1c150d;
+  --background-gradient: linear-gradient(to bottom, var(--background-color) 0%, var(--background-color) 20%, var(--background-color-dark) 100%);
+  --surface-color: #1c170d;
+  --surface-color-dark: rgba(30, 25, 22, 0.404);
   --border-color: #2a251d;
   --border-color-light: #252018;
   --border-color-lighter: #302b22;
   
-  /* Text Colors - Light on Dark */
-  --primary-text-color: #e0dad1;
-  --secondary-text-color: #b4aea8;
+  /* Text Colors - Light on Dark with Warm Tones */
+  --primary-text-color: #e6e0d8;
+  --secondary-text-color: #afa8a1;
   --tertiary-text-color: #aaa49e;
   
   /* Accent Color */
-  --accent-color: #a5a3f7;
+  --accent-color: #9a98f1;
   --accent-color-background: #151437;
-  --accent-color-hover: #c0c0f4;
+  --accent-color-hover: rgb(169, 169, 255);
   
   /* Spacing System */
   --spacer-xxsm: 0.25rem;   /* 4px */
@@ -70,10 +71,10 @@ html {
 }
 
 body {
-  font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 300;
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.7;
   color: var(--secondary-text-color);
   background: transparent;
   position: relative;
@@ -94,11 +95,11 @@ body::before {
 h1, h2, h3, h4, h5, h6,
 .title {
   font-family: 'PP Editorial Old', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 150;
-  line-height: 1.3;
-  letter-spacing: 0.02em;
+  font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   color: var(--primary-text-color);
-  margin-bottom: var(--spacer-xsm);
+  margin-bottom: var(--spacer-md);
   margin-top: var(--spacer-xxlg);
   border-bottom: none !important;
   font-feature-settings: "liga" 1, "dlig" 1;
@@ -106,25 +107,29 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .title {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   padding-bottom: var(--spacer-lg);
+  font-weight: 200;
 }
 
 h1 {
-  font-size: 2.2rem;
-
+  font-size: 2.5rem;
+  font-weight: 200;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 /* Monospace for code and metadata */
@@ -226,7 +231,7 @@ td {
 }
 
 tr:hover {
-  background-color: var(--background-color-hover);
+  background-color: rgba(245, 243, 240, 0.03);
   transition: background-color 0.2s ease;
 }
 
